@@ -185,8 +185,9 @@ df_final
 # In[26]:
 
 
-## Let's load in another dataset from TMDB in order to give us more columns in our dataset that can help us 
-## recommend similar tv shows from a given tv show.
+## Let's load in a dataset from Kaggle, which was sourced from TMDB, in order to give us more columns in our dataset that 
+## can help us recommend similar tv shows from a given tv show. 
+## Source: https://www.kaggle.com/datasets/asaniczka/full-tmdb-tv-shows-dataset-2023-150k-shows 
 
 tmdb = pd.read_csv('TMDB_tv_dataset_v3.csv') 
 tmdb
