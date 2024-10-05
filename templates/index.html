@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Acknowledgement: Portions of this code were generated via ChatGPT. I do not claim to have full proficiency in HTML. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Recommendation System</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container for the form and title */
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Title styling */
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Label styling */
+        label {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Input field styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #7d4cdb;
+            outline: none;
+        }
+
+        /* Button styling */
+        button {
+            padding: 12px 24px;
+            background-color: #7d4cdb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6538b4;
+        }
+
+        /* Smaller font paragraph styling */
+        .info-text {
+            font-size: 12px; /* Smaller font size */
+            color: #777; /* Slightly lighter text color */
+            margin-top: 20px; /* Space above the text */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TV Show Recommendation System</h1>
+        <form action="/recommend" method="post">
+            <label for="tv_show">Enter a TV Show:</label>
+            <input type="text" id="tv_show" name="tv_show" placeholder="e.g., Breaking Bad" required>
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <!-- Small text paragraph -->
+        <p class="info-text">
+            Input a TV show for which you want similar TV show recommendations. The data was gathered from IMDB's website, as well as from a Kaggle dataset sourced from TMDB. After extensive EDA and data cleaning, a clustering algorithm called "Equal-size Spectral Clustering" was used to generate TV recommendations given a user's input.
+        </p>
+    </div>
+
+</body>
+</html>
