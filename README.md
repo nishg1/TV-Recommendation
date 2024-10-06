@@ -39,7 +39,7 @@ The file Rec_Algorithm.py references a file called "final_df." This file was gen
 
 **templates/recommendations.html:** This HTML file provides the content for the recommendations page of the website.
 
-**Acknowledgement:** Portions of the code from templates/index.html and templates/recommendations.html were generated via ChatGPT. I do not claim to have proficiency in HTML.
+**Acknowledgement:** Portions of the code from templates/index.html and templates/recommendations.html were generated via ChatGPT. I do not claim to have full proficiency in HTML.
 
 
 
