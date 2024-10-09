@@ -19,19 +19,19 @@ This TV recommendation system generates a list of similar tv shows, in no partic
 ### Required Setup:
 
 #### Download the required datasets and external sources. These files were too large to upload to this repository.
-Download "title.basics.tsv.gz" and "title.ratings.tsv.gz" from https://datasets.imdbws.com/. These corresponding tsv's are referenced as "title.basics.tsv" and "title.ratings.tsv", respectively, in the file EDA_models.py. 
+Download "title.basics.tsv.gz" and "title.ratings.tsv.gz" from https://datasets.imdbws.com/. These corresponding tsv's are referenced as "title.basics.tsv" and "title.ratings.tsv", respectively, in the file EDA_Cleaning_Models.ipynb. 
 
-Download the dataset from https://www.kaggle.com/datasets/asaniczka/full-tmdb-tv-shows-dataset-2023-150k-shows. This is referenced in the file EDA_models.py as "TMDB_tv_dataset_v3.csv"
+Download the dataset from https://www.kaggle.com/datasets/asaniczka/full-tmdb-tv-shows-dataset-2023-150k-shows. This is referenced in the file EDA_Cleaning_Models.ipynb as "TMDB_tv_dataset_v3.csv"
 
-Download all files from the source_code folder from https://github.com/anamabo/Equal-Size-Spectral-Clustering/tree/main/source_code. This is used for the "Equal-Size Spectral Clustering model" that ultimately generates the tv recommendations in the file EDA_models.py.
+Download all files from the source_code folder from https://github.com/anamabo/Equal-Size-Spectral-Clustering/tree/main/source_code. This is used for the "Equal-Size Spectral Clustering model" that ultimately generates the tv recommendations in the file EDA_Cleaning_Models.ipynb.
 
 #### Generate a file titled "final_df"
-The file Rec_Algorithm.py references a file called "final_df." This file was generated from the line "pca_dataframe.to_csv('final_df')" in the file EDA_models.py. Thus, run the file EDA_models.py in its entirety before running Rec_Algorithm.py.
+The file Rec_Algorithm.py references a file called "final_df." This file was generated from the line "pca_dataframe.to_csv('final_df')" in the file EDA_Cleaning_Models.ipynb. Thus, run the file EDA_Cleaning_Models.ipynb in its entirety before running Rec_Algorithm.py.
 
 ### Files
-**EDA_models.py:** This file conducts EDA and data cleaning on two IMDB datasets and a Kaggle dataset sourced from TMDB. Once the data sources were merged and cleaned, various models were applied to the final dataset in order to construct TV recommendations from a user's inputted TV show.
+**EDA_Cleaning_Models.ipynb:** This file conducts EDA and data cleaning on two IMDB datasets and a Kaggle dataset sourced from TMDB. Once the data sources were merged and cleaned, various models were applied to the final dataset in order to construct TV recommendations from a user's inputted TV show.
 
-**Rec_Algorithm.py:** This file isolates the final recommendation algorithm from the EDA_models.py file and is referenced in application.py to build the website.
+**Rec_Algorithm.py:** This file isolates the final recommendation algorithm from the EDA_Cleaning_Models.ipynb file and is referenced in application.py to build the website.
 
 **application.py:** This file uses Flask to create a website where a user can input a TV show to receive a list of recommended TV shows.
 
