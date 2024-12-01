@@ -13,7 +13,7 @@ This TV recommendation system generates a list of similar tv shows, in no partic
 ### Models Used
 
 1. K-means clustering
-2. Hierarchical algglomeration
+2. Hierarchical agglomeration
 3. Equal-size spectral clustering (source: https://towardsdatascience.com/equal-size-spectral-clustering-cce65c6f9ba3, https://github.com/anamabo/Equal-Size-Spectral-Clustering/tree/main/source_code)
 
 ### Required Setup:
